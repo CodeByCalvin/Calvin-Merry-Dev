@@ -81,34 +81,47 @@ export default function Home() {
             <div className="coloured-box" style={{ width: "105%" }}></div>
           </div>
           <div className="text-with-box">
-            <div className="intro-text" style={{ fontSize: "4rem" }}>
+            <div
+              className="intro-text"
+              style={{ fontSize: "4rem", whiteSpace: "nowrap" }}
+            >
               My name is Calvin
             </div>
-            <div className="coloured-box" style={{ width: "105%" }}></div>
+            <div
+              className="coloured-box no wrap"
+              style={{ width: "105%" }}
+            ></div>
           </div>
-          <div
-            className="coloured-box"
-            style={{ top: "37%", width: "35%" }}
-          ></div>
-          <div
-            className="coloured-box"
-            style={{ top: "43%", width: "90%" }}
-          ></div>
         </Col>
       </Row>
 
       <Row className="align-items-end">
         <Col xs={12} className="text-container main-paragraph">
           <div className="text-with-box">
-            <div className="body-text">I'm a full-stack</div>
+            <div
+              className="body-text nowrap"
+              style={{ fontSize: "4rem", whiteSpace: "nowrap" }}
+            >
+              I'm a full-stack
+            </div>
             <div className="coloured-box" style={{ width: "105%" }}></div>
           </div>
           <div className="text-with-box">
-            <div className="body-text">software engineer</div>
+            <div
+              className="body-text"
+              style={{ fontSize: "4rem", whiteSpace: "nowrap" }}
+            >
+              software engineer
+            </div>
             <div className="coloured-box" style={{ width: "105%" }}></div>
           </div>
           <div className="text-with-box">
-            <div className="body-text">in Sheffield, UK</div>
+            <div
+              className="body-text"
+              style={{ fontSize: "4rem", whiteSpace: "nowrap" }}
+            >
+              in Sheffield, UK
+            </div>
             <div className="coloured-box" style={{ width: "105%" }}></div>
           </div>
         </Col>
