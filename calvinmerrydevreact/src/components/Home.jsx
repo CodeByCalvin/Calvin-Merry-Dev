@@ -76,9 +76,15 @@ export default function Home() {
         </Col>
 
         <Col xs={12} sm={9} className="text-container">
-          <div className="intro-text">Hi 👋🏻</div>
-          <div className="intro-text" style={{ fontSize: "3.8rem" }}>
-            My name is Calvin
+          <div className="text-with-box">
+            <div className="intro-text">Hi 👋🏻</div>
+            <div className="coloured-box" style={{ width: "105%" }}></div>
+          </div>
+          <div className="text-with-box">
+            <div className="intro-text" style={{ fontSize: "4rem" }}>
+              My name is Calvin
+            </div>
+            <div className="coloured-box" style={{ width: "105%" }}></div>
           </div>
           <div
             className="coloured-box"
@@ -92,56 +98,70 @@ export default function Home() {
       </Row>
 
       <Row className="align-items-end">
-        <Col xs={12} className="text-container">
-          <div className="body-text">
-            I'm a full-stack software engineer in Sheffield, UK
+        <Col xs={12} className="text-container main-paragraph">
+          <div className="text-with-box">
+            <div className="body-text">I'm a full-stack</div>
+            <div className="coloured-box" style={{ width: "105%" }}></div>
           </div>
-          <TypeAnimation
-            sequence={[
-              "React",
-              500,
-              "Javascript",
-              500,
-              "Express.js",
-              500,
-              "MongoDB",
-              500,
-              "Node.js",
-              500,
-              "HTML/CSS",
-              500,
-            ]}
-            style={{ fontSize: "5em" }}
-            repeat={Infinity}
-          />
+          <div className="text-with-box">
+            <div className="body-text">software engineer</div>
+            <div className="coloured-box" style={{ width: "105%" }}></div>
+          </div>
+          <div className="text-with-box">
+            <div className="body-text">in Sheffield, UK</div>
+            <div className="coloured-box" style={{ width: "105%" }}></div>
+          </div>
+        </Col>
+
+        <Col xs={12} className="text-container">
           <div
-            className="coloured-box"
-            style={{ top: "55%", width: "77%" }}
-          ></div>
-          <div
-            className="coloured-box"
-            style={{ top: "60.7%", width: "91%" }}
-          ></div>
-          <div
-            className="coloured-box"
-            style={{ top: "66%", width: "80%" }}
-          ></div>
+            style={{
+              position: "absolute",
+              textAlign: "center",
+              justifyContent: "center",
+            }}
+          >
+            <TypeAnimation
+              sequence={[
+                "React",
+                700,
+                "Javascript",
+                700,
+                "Express.js",
+                700,
+                "MongoDB",
+                700,
+                "Node.js",
+                700,
+                "HTML/CSS",
+                700,
+              ]}
+              style={{
+                fontSize: "4rem",
+                fontWeight: "600",
+                letterSpacing: "auto",
+              }}
+              repeat={Infinity}
+              cursor={false}
+            />
+            <div
+              className="coloured-box"
+              style={{
+                width: "105%",
+                top: "59%",
+                height: "2rem",
+              }}
+            ></div>
+          </div>
         </Col>
       </Row>
 
-      <div
-        className="scroll-down-btn d-flex justify-content-center align-items-center position-absolute bottom-0 start-50 translate-middle-x"
-        style={{
-          background: "transparent",
-          transition: "transform 0.3s ease-in-out",
-        }}
-      >
-        {/* Your SVG */}
+      <div className="home-footer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          strokeWidth="1.5"
+          strokeWidth="3"
           stroke="currentColor"
           id="scroll-down-btn"
           className="w-10 h-10 scroll-down-btn"
