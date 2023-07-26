@@ -1,3 +1,39 @@
 .App {
   text-align: center;
 }
+
+.container {
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+:root {
+  --primary-colour-dark: #fcd5ce;
+  --primary-colour-light: #f8f9fa;
+  --primary-colour-black: #212529;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--primary-color-black);
+  line-height: 1;
+  font-weight: 400;
+}

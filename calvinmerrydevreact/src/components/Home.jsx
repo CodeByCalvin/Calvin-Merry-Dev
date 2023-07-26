@@ -83,7 +83,7 @@ export default function Home() {
           <div className="text-with-box">
             <div
               className="intro-text"
-              style={{ fontSize: "4rem", whiteSpace: "nowrap" }}
+              style={{ fontSize: "3.6rem", whiteSpace: "nowrap" }}
             >
               My name is Calvin
             </div>
@@ -168,24 +168,6 @@ export default function Home() {
           </div>
         </Col>
       </Row>
-
-      <div className="home-footer">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="3"
-          stroke="currentColor"
-          id="scroll-down-btn"
-          className="w-10 h-10 scroll-down-btn"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M6 9l6 6 6-6"
-          ></path>
-        </svg>
-      </div>
     </div>
   );
 }

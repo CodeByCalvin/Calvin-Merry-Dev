@@ -1,0 +1,49 @@
+.description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 35rem;
+}
+
+.project-img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.btn-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-logo {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-right: 5px;
+}
+
+.cta-group {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-card-cta {
+  font-size: 2.4rem;
+  font-weight: 500;
+  background-color: var(--primary-colour-black);
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-card-cta:hover {
+  transform: scale(1.1);
+}
