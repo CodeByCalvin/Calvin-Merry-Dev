@@ -105,7 +105,7 @@ export default function Projects() {
       ],
     },
     {
-      title: "Weather App 🌤️",
+      title: "Minimalist Weather App 🌤️",
       description:
         "Welcome to The Flower Collective's online store! We are a boutique flower shop that provides handcrafted, unique flower arrangements for all occasions. Our aim is to bring joy and beauty into people's lives through the art of floral design.",
       image: `${process.env.PUBLIC_URL}/projectImgs/weatherappimg.png`,
