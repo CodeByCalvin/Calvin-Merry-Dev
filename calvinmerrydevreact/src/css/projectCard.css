@@ -3,6 +3,7 @@
   line-height: 1.5;
   text-align: center;
   max-width: 35rem;
+  margin-bottom: 2rem;
 }
 
 .project-img {
@@ -19,8 +20,8 @@
 }
 
 .tech-logo {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
   object-fit: cover;
   border-radius: 18px;
   margin-right: 5px;

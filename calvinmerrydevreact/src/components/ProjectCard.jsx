@@ -28,7 +28,6 @@ export default function ProjectCard({ projects }) {
           boxShadow: "0 7px 30px -10px rgba(150,170,180,0.5)",
           overflow: "hidden",
           padding: "2rem 0rem 2rem 0rem",
-
           gap: "clamp(0px, (100% - 360px + 32px) * 999, 16px)",
           transition: "transform 0.3s, border 0.3s",
           "&:hover": {
@@ -47,9 +46,9 @@ export default function ProjectCard({ projects }) {
               sx={{
                 color: "text.primary",
                 "&.Mui-focusVisible:after": { outlineOffset: "-4px" },
-                fontSize: "3rem",
+                fontSize: "2.6rem",
                 fontWeight: "700",
-                marginBottom: "1rem",
+                marginBottom: "1.4rem",
               }}
             >
               {title}
@@ -75,10 +74,10 @@ export default function ProjectCard({ projects }) {
                   pointerEvents: "none",
                   color: "white",
                   backgroundColor: tech.colour,
-                  fontSize: "1.8rem",
+                  fontSize: "1.5rem",
                   fontWeight: "600",
-                  padding: "0.7rem 1.4rem",
-                  borderRadius: "18px",
+                  padding: "0.4rem 0.8rem",
+                  borderRadius: "12px",
                   border: "none",
                 }}
               >
@@ -102,18 +101,6 @@ export default function ProjectCard({ projects }) {
             maxWidth: 200,
           }}
         >
-          <AspectRatio
-            variant="soft"
-            sx={{
-              "--AspectRatio-paddingBottom":
-                "clamp(0px, (100% - 200px) * 999, 200px)",
-              pointerEvents: "none",
-              borderRadius: "10px",
-              overflow: "hidden",
-              marginBottom: "1rem",
-            }}
-          ></AspectRatio>
-
           <Box sx={{ display: "flex", gap: 1.5, mt: "auto" }}></Box>
         </Box>
         <CardOverflow

@@ -8,7 +8,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container" name="home">
       <Row className="align-items-end row-mb">
         <Col xs={12} sm={3} className="text-center">
           <img src={profilePic} alt="Profile" className="profile-picture" />
