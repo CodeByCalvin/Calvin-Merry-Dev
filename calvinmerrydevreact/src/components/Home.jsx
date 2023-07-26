@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/home.css";
 import "../App.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { ReactComponent as CvIcon } from "../imgs/cv-icon.svg";
 import profilePic from "../imgs/profile-picture.jpg";
 import { TypeAnimation } from "react-type-animation";

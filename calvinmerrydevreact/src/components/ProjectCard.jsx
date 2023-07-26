@@ -1,5 +1,4 @@
 import * as React from "react";
-import AspectRatio from "@mui/joy/AspectRatio";
 import Box from "@mui/joy/Box";
 import Card from "@mui/joy/Card";
 import Typography from "@mui/joy/Typography";
@@ -7,8 +6,6 @@ import Link from "@mui/joy/Link";
 import CardOverflow from "@mui/joy/CardOverflow";
 import Chip from "@mui/joy/Chip";
 import "../css/projectCard.css";
-import { createTheme } from "@mui/material/styles";
-import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
 
 export default function ProjectCard({ projects }) {
   const {
@@ -135,17 +132,14 @@ export default function ProjectCard({ projects }) {
         >
           <div className="cta-group">
             <a
-              href="#"
+              href={demo}
               className={
                 projectIncomplete ? "btn-card-cta blur-btn" : "btn-card-cta"
               }
             >
               Live Demo
             </a>
-            <a
-              href="https://github.com/CodeByCalvin/Calvin-Merry-Developer-Portfolio"
-              className="btn-card-cta"
-            >
+            <a href={repo} className="btn-card-cta">
               GitHub
             </a>
           </div>
