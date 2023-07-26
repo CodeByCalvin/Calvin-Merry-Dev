@@ -3,8 +3,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import { scroller } from "react-scroll";
-import { Link } from "react-scroll";
-import { React, useState } from "react";
+import { React } from "react";
 
 function App() {
   // Smooth scrolling to top of window
