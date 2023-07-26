@@ -11,10 +11,19 @@ import { createTheme } from "@mui/material/styles";
 import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
 
 export default function ProjectCard({ projects }) {
-  const { title, description, image, repo, demo, techStack } = projects;
+  const {
+    title,
+    description,
+    image,
+    repo,
+    demo,
+    techStack,
+    projectIncomplete,
+  } = projects;
   return (
     <Box sx={{ minHeight: 350 }}>
       <Card
+        className={projectIncomplete ? "blur-card" : null}
         variant="outlined"
         sx={(theme) => ({
           width: "100%",
@@ -55,7 +64,21 @@ export default function ProjectCard({ projects }) {
             </Link>
           </Typography>
         </div>
+        {projectIncomplete ? (
+          <span
+            style={{
+              fontSize: "2.3rem",
+              color: "#c92a2a",
+              fontWeight: "600",
+              marginBottom: "1.8rem",
+            }}
+            className="project-status"
+          >
+            Coming soon!
+          </span>
+        ) : null}
         <div
+          className="tech-stack-container"
           style={{
             display: "flex",
             flexDirection: "row",
@@ -72,8 +95,8 @@ export default function ProjectCard({ projects }) {
                 className="tech-btn"
                 sx={{
                   pointerEvents: "none",
+                  backgroundImage: `linear-gradient(45deg, ${tech.colour}, ${tech.colourLight})`,
                   color: "white",
-                  backgroundColor: tech.colour,
                   fontSize: "1.5rem",
                   fontWeight: "600",
                   padding: "0.4rem 0.8rem",
@@ -89,9 +112,19 @@ export default function ProjectCard({ projects }) {
             );
           })}
         </div>
-        <img className="project-img" src={image} alt="" />
+        <img
+          className={projectIncomplete ? "blur-img project-img" : "project-img"}
+          src={image}
+          alt=""
+        />
 
-        <div className="description">{description}</div>
+        <div
+          className={
+            projectIncomplete ? "blur-description description" : "description"
+          }
+        >
+          {description}
+        </div>
 
         <Box
           sx={{
