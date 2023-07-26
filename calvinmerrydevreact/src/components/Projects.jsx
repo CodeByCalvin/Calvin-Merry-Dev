@@ -77,7 +77,7 @@ export default function Projects() {
         "This is a full-stack language learning app which uses spaced repetition to help users learn a new language. The user can create an account, choose a language to learn, and then start learning. The app will track the user's progress and show them their score.",
       image: `${process.env.PUBLIC_URL}/projectImgs/languagelearningappimg.png`,
       repo: "https://github.com/CodeByCalvin/languagelearningapp-frontend-",
-      demo: "www.test.com",
+      demo: "https://language-learning-app.onrender.com/",
       techStack: [
         getTechByName("React"),
         getTechByName("JavaScript"),
@@ -94,7 +94,7 @@ export default function Projects() {
       description:
         "This is my portfolio website, which I built using React and Material UI. I wanted to create a website that was simple, clean, and easy to navigate. I also wanted to showcase some of my projects and skills.",
       image: `${process.env.PUBLIC_URL}/projectImgs/devportfolioimg.png`,
-      repo: "www.test.com",
+      repo: "https://github.com/CodeByCalvin/Calvin-Merry-Developer-Portfolio-React-",
       demo: "https://calvinmerry.dev/",
       techStack: [
         getTechByName("React"),
@@ -105,12 +105,28 @@ export default function Projects() {
       ],
     },
     {
+      title: "Weather App 🌤️",
+      description:
+        "Welcome to The Flower Collective's online store! We are a boutique flower shop that provides handcrafted, unique flower arrangements for all occasions. Our aim is to bring joy and beauty into people's lives through the art of floral design.",
+      image: `${process.env.PUBLIC_URL}/projectImgs/weatherappimg.png`,
+      repo: "https://github.com/CodeByCalvin/weatherapp",
+      demo: "https://github.com/CodeByCalvin/weatherapp",
+      techStack: [
+        getTechByName("React"),
+        getTechByName("JavaScript"),
+        getTechByName("APIs"),
+        getTechByName("Bootstrap"),
+        getTechByName("HTML"),
+        getTechByName("CSS"),
+      ],
+    },
+    {
       title: "The Flower Collective 🪴",
       description:
         "Welcome to The Flower Collective's online store! We are a boutique flower shop that provides handcrafted, unique flower arrangements for all occasions. Our aim is to bring joy and beauty into people's lives through the art of floral design.",
       image: `${process.env.PUBLIC_URL}/projectImgs/flowercollectiveimg.png`,
-      repo: "www.test.com",
-      demo: "www.test.com",
+      repo: "https://github.com/CodeByCalvin/The-Flower-Collective-Website",
+      demo: "https://theflowercollective.netlify.app/",
       techStack: [
         getTechByName("JavaScript"),
         getTechByName("HTML"),
@@ -128,9 +144,9 @@ export default function Projects() {
       techStack: [
         getTechByName("React"),
         getTechByName("JavaScript"),
+        getTechByName("Material UI"),
         getTechByName("HTML"),
         getTechByName("CSS"),
-        getTechByName("APIs"),
       ],
     },
   ];

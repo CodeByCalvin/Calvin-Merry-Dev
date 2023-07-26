@@ -118,13 +118,7 @@ export default function ProjectCard({ projects }) {
           alt=""
         />
 
-        <div
-          className={
-            projectIncomplete ? "blur-description description" : "description"
-          }
-        >
-          {description}
-        </div>
+        <div className="description">{description}</div>
 
         <Box
           sx={{
@@ -140,7 +134,12 @@ export default function ProjectCard({ projects }) {
           sx={{ display: "flex", justifyContent: "center", gap: "2rem" }}
         >
           <div className="cta-group">
-            <a href="#" className="btn-card-cta">
+            <a
+              href="#"
+              className={
+                projectIncomplete ? "btn-card-cta blur-btn" : "btn-card-cta"
+              }
+            >
               Live Demo
             </a>
             <a
