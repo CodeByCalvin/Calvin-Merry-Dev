@@ -1,4 +1,4 @@
-# Calvin Merry Developer Portfolio Website 💻
+# Calvin Merry Dev 💻
 
 <strong>Welcome to Calvin Merry's Developer Portfolio Github repository! This is where you'll find the codebase for my professional portfolio as a software engineer. My portfolio showcases my programming skills, projects, and my experience in the tech industry.</strong>
 
