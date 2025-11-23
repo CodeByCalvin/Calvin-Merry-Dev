@@ -18,29 +18,32 @@ export default function ProjectCard({ projects }) {
     projectIncomplete,
   } = projects;
   return (
-    <Box sx={{ minHeight: 350 }}>
+    <Box sx={{ 
+      width: '100%', 
+      minHeight: 700
+    }}>
       <Card
         className={projectIncomplete ? "blur-card" : null}
         variant="outlined"
         sx={(theme) => ({
           width: "100%",
+          height: "100%",
+          minHeight: 700,
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "flex-start",
           alignItems: "center",
-          gridColumn: "span 2",
           flexDirection: "column",
-          flexWrap: "wrap",
-          border: "none",
+          border: "1px solid rgba(0, 0, 0, 0.08)",
           boxShadow: "0 7px 30px -10px rgba(150,170,180,0.5)",
           overflow: "hidden",
-          padding: "2rem 0rem 2rem 0rem",
-          gap: "clamp(0px, (100% - 360px + 32px) * 999, 16px)",
-          transition: "transform 0.3s, border 0.3s",
+          padding: "2rem 1.5rem",
+          gap: "1.5rem",
+          transition: "transform 0.3s, border 0.3s, box-shadow 0.3s",
           "&:hover": {
-            borderColor: theme.vars.palette.primary.outlinedHoverBorder,
+            borderColor: "rgba(0, 0, 0, 0.15)",
             transform: "translateY(-2px)",
+            boxShadow: "0 12px 40px -10px rgba(150,170,180,0.6)",
           },
-          "& > *": { minWidth: "clamp(0px, (360px - 100%) * 999,100%)" },
         })}
       >
         <div>

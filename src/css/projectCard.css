@@ -3,15 +3,19 @@
   line-height: 1.5;
   text-align: center;
   max-width: 35rem;
-  margin-bottom: 2rem;
+  margin-bottom: auto;
   padding: 0rem 1.4rem 1.4rem 1.4rem;
+  overflow: hidden;
+  flex-grow: 1;
 }
 
 .project-img {
   width: 100%;
-  height: 30rem;
+  height: 20rem;
   object-fit: cover;
   border-radius: 15px;
+  flex-shrink: 0;
+  margin-bottom: 1.5rem;
 }
 
 .btn-content {
@@ -23,6 +27,7 @@
 .tech-stack-container {
   width: 35rem;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .tech-logo {
@@ -36,7 +41,8 @@
 .cta-group {
   display: flex;
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  margin-top: auto;
   justify-content: center;
 }
 
@@ -81,4 +87,36 @@
 
 .blur-card .card-title {
   filter: none;
+}
+
+@media (max-width: 768px) {
+  .description {
+    font-size: 2.2rem;
+    max-width: 100%;
+  }
+  
+  .tech-stack-container {
+    width: 100%;
+  }
+  
+  .tech-btn {
+    font-size: 2rem !important;
+  }
+  
+  .tech-logo {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+  }
+  
+  .btn-card-cta {
+    font-size: 2.8rem;
+  }
+  
+  .MuiTypography-h2 {
+    font-size: 3.2rem !important;
+  }
+  
+  .MuiLink-root {
+    font-size: 3.2rem !important;
+  }
 }

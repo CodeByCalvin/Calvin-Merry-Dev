@@ -47,22 +47,7 @@ export default function Home() {
                 </svg>
               </button>
             </a>
-            <a
-              href="https://www.twitter.com/CodeByCalvin"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="social-link">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  data-name="Layer 1"
-                  viewBox="0 0 24 24"
-                  id="twitter"
-                >
-                  <path d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z"></path>
-                </svg>
-              </button>
-            </a>
+
             <a
               href="https://www.dropbox.com/scl/fi/8o4ov6gkshljwxgpbfa68/Calvin-Merry-CV.pdf?rlkey=s8g128hnsb5yy7smdzmvgo4zp&dl=0"
               target="_blank"
@@ -95,14 +80,14 @@ export default function Home() {
         </Col>
       </Row>
 
-      <Row className="align-items-end">
+      <Row className="align-items-end" style={{ marginBottom: "10rem" }}>
         <Col xs={12} className="text-container main-paragraph">
           <div className="text-with-box">
             <div
               className="body-text nowrap"
               style={{ fontSize: "4rem", whiteSpace: "nowrap" }}
             >
-              I'm a full-stack
+              I'm a full-stack software engineer
             </div>
             <div className="coloured-box" style={{ width: "105%" }}></div>
           </div>
@@ -111,16 +96,7 @@ export default function Home() {
               className="body-text"
               style={{ fontSize: "4rem", whiteSpace: "nowrap" }}
             >
-              software engineer
-            </div>
-            <div className="coloured-box" style={{ width: "105%" }}></div>
-          </div>
-          <div className="text-with-box">
-            <div
-              className="body-text"
-              style={{ fontSize: "4rem", whiteSpace: "nowrap" }}
-            >
-              in Sheffield, UK
+              Sheffield, UK
             </div>
             <div className="coloured-box" style={{ width: "105%" }}></div>
           </div>
@@ -138,15 +114,19 @@ export default function Home() {
               sequence={[
                 "React",
                 700,
+                "Typescript",
+                700,
                 "Javascript",
                 700,
-                "Express.js",
+                "Python",
                 700,
-                "MongoDB",
+                "Django",
                 700,
-                "Node.js",
+                "Azure DevOps",
                 700,
-                "HTML/CSS",
+                "Terraform",
+                700,
+                "Playwright",
                 700,
               ]}
               style={{

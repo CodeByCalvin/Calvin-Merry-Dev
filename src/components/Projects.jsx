@@ -153,12 +153,12 @@ export default function Projects() {
 
   return (
     <div className="projects">
+      <div className="text-with-box">
+        <div className="intro-text">Projects</div>
+        <div className="coloured-box" style={{ width: "110%" }}></div>
+      </div>
+      
       <div className="projects-container">
-        <div className="text-with-box">
-          <div className="intro-text">Projects</div>
-          <div className="coloured-box" style={{ width: "110%" }}></div>
-        </div>
-
         {projects.map((project) => {
           return <ProjectCard key={project.title} projects={project} />;
         })}
