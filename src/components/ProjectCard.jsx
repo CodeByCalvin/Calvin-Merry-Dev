@@ -95,6 +95,11 @@ export default function ProjectCard({ projects }) {
           }}
         >
           {techStack.map((tech) => {
+            const isDark = document.documentElement.classList.contains('dark');
+            const gradient = isDark 
+              ? `linear-gradient(45deg, ${tech.colourDark}, ${tech.colour})`
+              : `linear-gradient(45deg, ${tech.colour}, ${tech.colourLight})`;
+            
             return (
               <Chip
                 key={tech.name}
@@ -102,7 +107,7 @@ export default function ProjectCard({ projects }) {
                 className="tech-btn"
                 sx={{
                   pointerEvents: "none",
-                  backgroundImage: `linear-gradient(45deg, ${tech.colour}, ${tech.colourLight})`,
+                  backgroundImage: gradient,
                   color: "white",
                   fontSize: "1.5rem",
                   fontWeight: "600",

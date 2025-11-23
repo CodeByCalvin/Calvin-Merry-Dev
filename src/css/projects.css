@@ -12,6 +12,7 @@
 
 .projects .text-with-box .intro-text {
   font-size: 5rem;
+  color: var(--foreground);
 }
 
 .projects-container {
@@ -48,4 +49,10 @@
     gap: 2rem;
     margin-bottom: 2rem;
   }
+}
+
+/* Dark mode styles */
+.dark .coloured-box {
+  background-color: #d64e4a;
+  opacity: 1;
 }

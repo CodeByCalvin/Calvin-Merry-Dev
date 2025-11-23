@@ -127,6 +127,7 @@ export default function Home() {
                 "Playwright",
                 700,
               ]}
+              className="animated-text"
               style={{
                 fontSize: "4rem",
                 fontWeight: "600",

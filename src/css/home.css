@@ -57,6 +57,11 @@ Spacing System (px):
   border: none;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
+  color: var(--foreground);
+}
+
+.social-link svg {
+  fill: currentColor;
 }
 
 .social-link:hover {
@@ -88,7 +93,7 @@ Spacing System (px):
   top: 55%;
   height: 1.7rem;
   background-color: var(--primary-colour-dark);
-  z-index: -1;
+  z-index: 0;
 }
 
 .text-with-box {
@@ -97,6 +102,7 @@ Spacing System (px):
   text-align: center;
   justify-content: center;
   margin-bottom: 2rem;
+  z-index: 1;
 }
 
 .coloured-box-project {
@@ -109,7 +115,7 @@ Spacing System (px):
   aspect-ratio: 1;
   object-fit: cover;
   object-position: center;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   margin-top: 0;
   border: 3px solid #fcd5ce;
 }
@@ -128,12 +134,18 @@ Spacing System (px):
   font-size: 4.8rem;
   font-weight: 600;
   line-height: 1.4;
+  color: var(--foreground);
+  position: relative;
+  z-index: 2;
 }
 
 .body-text {
   font-size: 4rem;
   font-weight: 600;
   line-height: 1.5;
+  color: var(--foreground);
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -164,6 +176,9 @@ Spacing System (px):
   font-size: 4rem;
   font-weight: 400;
   line-height: 1.2;
+  color: var(--foreground);
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -192,4 +207,14 @@ Spacing System (px):
   .main-paragraph {
     margin-bottom: 3rem;
   }
+}
+
+/* Dark mode styles */
+.dark .coloured-box {
+  background-color: #d64e4a;
+  opacity: 1;
+}
+
+.dark .profile-picture {
+  border-color: #ff9b96;
 }

@@ -7,6 +7,7 @@
   padding: 0rem 1.4rem 1.4rem 1.4rem;
   overflow: hidden;
   flex-grow: 1;
+  font-weight: 500;
 }
 
 .project-img {
@@ -51,7 +52,7 @@
   font-size: 2.4rem;
   font-weight: 500;
   border: none;
-  padding: 0.6rem 1.5rem;
+  padding: 0.4rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
   color: #fff;
@@ -130,4 +131,38 @@
   .MuiLink-root {
     font-size: 3.2rem !important;
   }
+}
+
+/* Dark mode styles */
+.dark .MuiCard-root {
+  background-color: var(--card) !important;
+  color: var(--card-foreground) !important;
+  border: 1px solid var(--border) !important;
+}
+
+.dark .description {
+  color: var(--muted-foreground);
+}
+
+.dark .MuiTypography-h2,
+.dark .MuiLink-root {
+  color: var(--card-foreground) !important;
+}
+
+.dark .blur-card {
+  background-color: var(--card) !important;
+  border: 1px solid var(--border) !important;
+}
+
+.dark .btn-card-cta:first-child {
+  background-color: #c03a36;
+}
+
+.dark .btn-card-cta:last-child {
+  background-color: #d17974;
+}
+
+/* Use darker shades for tech pills in dark mode - remove brightness filter */
+.dark .MuiChip-root {
+  /* Pills will use the darker gradient from the colour property */
 }
