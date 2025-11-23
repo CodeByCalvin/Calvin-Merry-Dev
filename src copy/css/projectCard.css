@@ -1,0 +1,83 @@
+.description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 35rem;
+  margin-bottom: 2rem;
+  padding: 0rem 1.4rem 1.4rem 1.4rem;
+}
+
+.project-img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.btn-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-stack-container {
+  width: 35rem;
+  padding: 1rem;
+}
+
+.tech-logo {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-right: 5px;
+}
+
+.cta-group {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-card-cta {
+  font-size: 2.4rem;
+  font-weight: 500;
+  background-color: var(--primary-colour-black);
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-card-cta:hover {
+  transform: scale(1.1);
+}
+
+/* BlURRED CARD */
+
+.blur-card {
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.blur-card .blur-img {
+  filter: blur(8px);
+}
+
+.blur-card .btn-group {
+  filter: blur(4px);
+}
+
+.blur-card .blur-description {
+  filter: blur(4px);
+}
+
+.blur-card .blur-btn {
+  filter: blur(4px);
+}
+
+.blur-card .card-title {
+  filter: none;
+}
