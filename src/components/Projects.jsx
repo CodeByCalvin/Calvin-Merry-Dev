@@ -6,14 +6,20 @@ export default function Projects() {
   const tech = [
     {
       name: "React",
-      colour: "#61DAFB",
-      colourLight: "#85e3ff",
+      colour: "#149ECA",
+      colourLight: "#4db8d9",
       logo: "https://skillicons.dev/icons?i=react",
     },
     {
+      name: "Typescript",
+      colour: "#3178C6",
+      colourLight: "#5599dd",
+      logo: "https://skillicons.dev/icons?i=typescript",
+    },
+    {
       name: "JavaScript",
-      colour: "#F7DF1E",
-      colourLight: "#fbe46b",
+      colour: "#D4A017",
+      colourLight: "#E5B84A",
       logo: "https://skillicons.dev/icons?i=javascript",
     },
     {
@@ -27,6 +33,18 @@ export default function Projects() {
       colour: "#1572B6",
       colourLight: "#4186d6",
       logo: "https://skillicons.dev/icons?i=css",
+    },
+    {
+      name: "Tailwind",
+      colour: "#06B6D4",
+      colourLight: "#38bdf8",
+      logo: "https://skillicons.dev/icons?i=tailwind",
+    },
+    {
+      name: "Vite.js",
+      colour: "#646CFF",
+      colourLight: "#8891ff",
+      logo: "https://skillicons.dev/icons?i=vite",
     },
     {
       name: "Node.js",
@@ -72,19 +90,18 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Language Learning App 📚",
+      title: "BardBox 🎵",
       description:
-        "This is a full-stack language learning app which uses spaced repetition to help users learn a new language. The user can create an account, choose a language to learn, and then start learning. The app will track the user's progress and show them their score.",
-      image: "/projectImgs/languagelearningappimg.png",
-      repo: "https://github.com/CodeByCalvin/languagelearningapp-frontend-",
-      demo: "https://language-learning-app.onrender.com/",
+        "A tool that allows Dungeon Masters to bring their D&D games to life by organising their music into playlists, tagging, creating soundscape presets and much more.",
+      projectIncomplete: true,
+      image: "/projectImgs/bardboximg.png",
+      repo: "https://github.com/CodeByCalvin/bardbox-public",
+      demo: "https://www.bardbox.app/",
       techStack: [
         getTechByName("React"),
-        getTechByName("JavaScript"),
-        getTechByName("Node.js"),
-        getTechByName("MongoDB"),
-        getTechByName("Express.js"),
-        getTechByName("HTML"),
+        getTechByName("Vite.js"),
+        getTechByName("Typescript"),
+        getTechByName("Tailwind"),
         getTechByName("CSS"),
         getTechByName("APIs"),
       ],
@@ -98,10 +115,11 @@ export default function Projects() {
       demo: "https://calvinmerry.dev/",
       techStack: [
         getTechByName("React"),
-        getTechByName("Material UI"),
+        getTechByName("Vite.js"),
         getTechByName("JavaScript"),
         getTechByName("HTML"),
         getTechByName("CSS"),
+        getTechByName("Material UI"),
       ],
     },
     {
@@ -121,6 +139,24 @@ export default function Projects() {
       ],
     },
     {
+      title: "Language Learning App 📚",
+      description:
+        "This is a full-stack language learning app which uses spaced repetition to help users learn a new language. The user can create an account, choose a language to learn, and then start learning. The app will track the user's progress and show them their score.",
+      image: "/projectImgs/languagelearningappimg.png",
+      repo: "https://github.com/CodeByCalvin/languagelearningapp-frontend-",
+      demo: "https://language-learning-app.onrender.com/",
+      techStack: [
+        getTechByName("React"),
+        getTechByName("JavaScript"),
+        getTechByName("Node.js"),
+        getTechByName("MongoDB"),
+        getTechByName("Express.js"),
+        getTechByName("HTML"),
+        getTechByName("CSS"),
+        getTechByName("APIs"),
+      ],
+    },
+    {
       title: "The Flower Collective 🪴",
       description:
         "Welcome to The Flower Collective's online store! We are a boutique flower shop that provides handcrafted, unique flower arrangements for all occasions. Our aim is to bring joy and beauty into people's lives through the art of floral design.",
@@ -129,22 +165,6 @@ export default function Projects() {
       demo: "https://theflowercollective.netlify.app/",
       techStack: [
         getTechByName("JavaScript"),
-        getTechByName("HTML"),
-        getTechByName("CSS"),
-      ],
-    },
-    {
-      title: "Jigsaw Puzzle Tracker 🧩",
-      description:
-        "Welcome to the Jigsaw Puzzle Tracker repository! This is an interactive productivity tool aimed at teachers who want an intuitive, responsive and simple way to track classroom rewards.",
-      projectIncomplete: true,
-      image: "/projectImgs/quizappimg.png",
-      repo: "https://github.com/CodeByCalvin/Jigsaw-Reward-Tracker",
-      demo: "www.test.com",
-      techStack: [
-        getTechByName("React"),
-        getTechByName("JavaScript"),
-        getTechByName("Material UI"),
         getTechByName("HTML"),
         getTechByName("CSS"),
       ],

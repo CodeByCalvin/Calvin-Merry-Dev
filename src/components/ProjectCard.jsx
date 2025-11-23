@@ -20,7 +20,10 @@ export default function ProjectCard({ projects }) {
   return (
     <Box sx={{ 
       width: '100%', 
-      minHeight: 700
+      minHeight: 700,
+      '@media (max-width: 768px)': {
+        minHeight: 'auto'
+      }
     }}>
       <Card
         className={projectIncomplete ? "blur-card" : null}
@@ -44,10 +47,14 @@ export default function ProjectCard({ projects }) {
             transform: "translateY(-2px)",
             boxShadow: "0 12px 40px -10px rgba(150,170,180,0.6)",
           },
+          '@media (max-width: 768px)': {
+            minHeight: 'auto',
+            gap: '1rem'
+          }
         })}
       >
         <div>
-          <Typography level="h2" sx={{ fontSize: "2.4rem" }} mb={0.5}>
+          <Typography level="h2" sx={{ fontSize: "2.4rem", marginBottom: 0 }}>
             <Link
               href="#container-responsive"
               overlay
@@ -57,7 +64,7 @@ export default function ProjectCard({ projects }) {
                 "&.Mui-focusVisible:after": { outlineOffset: "-4px" },
                 fontSize: "2.6rem",
                 fontWeight: "700",
-                marginBottom: "1.4rem",
+                marginBottom: 0,
               }}
             >
               {title}
@@ -70,11 +77,11 @@ export default function ProjectCard({ projects }) {
               fontSize: "2.3rem",
               color: "#c92a2a",
               fontWeight: "600",
-              marginBottom: "1.8rem",
+              marginBottom: 0,
             }}
             className="project-status"
           >
-            Coming soon!
+            In development
           </span>
         ) : null}
         <div
@@ -136,11 +143,9 @@ export default function ProjectCard({ projects }) {
           <div className="cta-group">
             <a
               href={demo}
-              className={
-                projectIncomplete ? "btn-card-cta blur-btn" : "btn-card-cta"
-              }
+              className="btn-card-cta"
             >
-              Live Demo
+              Live
             </a>
             <a href={repo} className="btn-card-cta">
               GitHub

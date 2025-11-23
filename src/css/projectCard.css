@@ -49,13 +49,21 @@
 .btn-card-cta {
   font-size: 2.4rem;
   font-weight: 500;
-  background-color: var(--primary-colour-black);
   border: none;
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
   text-decoration: none;
   color: #fff;
   transition: all 0.2s ease-in-out;
+}
+
+.btn-card-cta:first-child {
+  background-color: #d64e4a;
+  font-weight: 600;
+}
+
+.btn-card-cta:last-child {
+  background-color: #e8a29d;
 }
 
 .btn-card-cta:hover {
@@ -71,6 +79,7 @@
 
 .blur-card .blur-img {
   filter: blur(8px);
+  opacity: 0.6;
 }
 
 .blur-card .btn-group {
@@ -93,6 +102,8 @@
   .description {
     font-size: 2.2rem;
     max-width: 100%;
+    flex-grow: 0;
+    margin-bottom: 1rem;
   }
   
   .tech-stack-container {

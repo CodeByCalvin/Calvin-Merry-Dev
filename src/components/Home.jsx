@@ -85,7 +85,6 @@ export default function Home() {
           <div className="text-with-box">
             <div
               className="body-text nowrap"
-              style={{ fontSize: "4rem", whiteSpace: "nowrap" }}
             >
               I'm a full-stack software engineer
             </div>
@@ -94,7 +93,6 @@ export default function Home() {
           <div className="text-with-box">
             <div
               className="body-text"
-              style={{ fontSize: "4rem", whiteSpace: "nowrap" }}
             >
               Sheffield, UK
             </div>
