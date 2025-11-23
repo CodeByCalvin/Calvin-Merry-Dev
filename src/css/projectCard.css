@@ -112,12 +112,12 @@
   }
   
   .tech-btn {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
   
   .tech-logo {
-    width: 2.5rem !important;
-    height: 2.5rem !important;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   
   .btn-card-cta {
@@ -125,19 +125,19 @@
   }
   
   .MuiTypography-h2 {
-    font-size: 3.2rem !important;
+    font-size: 3.2rem;
   }
   
   .MuiLink-root {
-    font-size: 3.2rem !important;
+    font-size: 3.2rem;
   }
 }
 
 /* Dark mode styles */
 .dark .MuiCard-root {
-  background-color: var(--card) !important;
-  color: var(--card-foreground) !important;
-  border: 1px solid var(--border) !important;
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--border);
 }
 
 .dark .description {
@@ -146,12 +146,12 @@
 
 .dark .MuiTypography-h2,
 .dark .MuiLink-root {
-  color: var(--card-foreground) !important;
+  color: var(--card-foreground);
 }
 
 .dark .blur-card {
-  background-color: var(--card) !important;
-  border: 1px solid var(--border) !important;
+  background-color: var(--card);
+  border: 1px solid var(--border);
 }
 
 .dark .btn-card-cta:first-child {

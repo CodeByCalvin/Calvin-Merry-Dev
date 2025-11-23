@@ -1,10 +1,10 @@
 .theme-toggle-btn {
-  position: fixed !important;
+  position: fixed;
   top: 2rem;
   right: 2rem;
   width: 4rem;
   height: 4rem;
-  display: flex !important;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(252, 213, 206, 0.3);
@@ -12,7 +12,7 @@
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  z-index: 9999 !important;
+  z-index: 9999;
   color: #333;
 }
 
