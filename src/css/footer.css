@@ -12,3 +12,7 @@
   background-color: var(--card);
   border-top: 1px solid var(--border);
 }
+
+.dark .scroll-down-btn {
+  color: #fff;
+}
